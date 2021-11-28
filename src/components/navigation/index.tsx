@@ -27,7 +27,7 @@ const links = [
   },
   {
     label: `Careers`,
-    href: `/`,
+    href: `https://docs.google.com/forms/d/e/1FAIpQLScMr4p_uf2jHuOhrEKQyZ0edFenK8AEIbilBvAZzm4B8AgYRw/viewform`,
   },
   {
     label: `About Us`,
