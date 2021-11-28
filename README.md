@@ -1,2 +1,0 @@
-# tarabol.space
-Home page
