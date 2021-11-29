@@ -8,65 +8,62 @@ const FeatureSection = () => (
         <div className={tw(`mb-16 text-center`)}>
           <h4 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase`)}>Features</h4>
           <p className={tw(`mt-2 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>
-            How we change the game
+            How we change the oursourcing game
           </p>
         </div>
         <div className={tw(`flex flex-wrap my-12`)}>
           <div className={tw(`w-full border-b md:w-1/2 md:border-r lg:w-1/3 p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
-              <div className={tw(`ml-4 text-xl`)}>Increase sales</div>
+              <div className={tw(`ml-4 text-xl`)}>High quality developers</div>
             </div>
             <p className={tw(`leading-loose text-gray-500`)}>
-              Consectetur pariatur irure exercitation sit amet id consectetur consecteturmagna et Lorem labore qui
-              velit.
+              We always put our customer at first, so developers will be our DNA. The high qualified developers, the more happiness customers.
             </p>
           </div>
           <div className={tw(`w-full border-b md:w-1/2 lg:w-1/3 lg:border-r p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
-              <div className={tw(`ml-4 text-xl`)}>Enterprise-ready</div>
+              <div className={tw(`ml-4 text-xl`)}>Smart IT solution</div>
             </div>
             <p className={tw(`leading-loose text-gray-500 `)}>
-              Labore duis pariatur est exercitation laboris cupidatat amet cillum. Amet nisi ullamco.
+              We have great experts who can approach with world class knowledge. That will help us in providing and solving complex IT problems.
             </p>
           </div>
           <div className={tw(`w-full border-b md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 p-8`)}>
             <div className="flex items-center mb-6">
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
-              <div className={tw(`ml-4 text-xl`)}>Unlimited growth</div>
+              <div className={tw(`ml-4 text-xl`)}>Company culture</div>
             </div>
             <p className={tw(`leading-loose text-gray-500`)}>
-              Elit deserunt nisi esse duis cupidatat proident sit minim mollit officia pariatur incididunt in tempor.
+              There are less of company has their own culture. For us, the culture will shape us and lead us in the right way.
             </p>
           </div>
           <div className={tw(`w-full border-b md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0 p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
-              <div className={tw(`ml-4 text-xl`)}>Recommended by experts</div>
+              <div className={tw(`ml-4 text-xl`)}>Up to date technologies</div>
             </div>
             <p className={tw(`leading-loose text-gray-500`)}>
-              Velit sit tempor pariatur quis pariatur incididunt culpa dolor voluptate officia incididunt velit dolore.
+              We always up to date knowledge for making sure that we will always provide the best services, best technologies for customer.
             </p>
           </div>
           <div className={tw(`w-full border-b md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0 p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
-              <div className={tw(`ml-4 text-xl`)}>Modern platform</div>
+              <div className={tw(`ml-4 text-xl`)}>Easy in colloboration</div>
             </div>
             <p className={tw(`leading-loose text-gray-500`)}>
-              Laboris elit consectetur sint nisi eu mollit proident sit magna velit adipisicing consequat amet
-              reprehenderit.
+              "THE CUSTOMER IS ALWAYS RIGHT" is our sologan. Just contact with us, the rest will be handled by us professionally.
             </p>
           </div>
           <div className={tw(`w-full md:w-1/2 lg:w-1/3 p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-500`)} />
-              <div className={tw(`ml-4 text-xl`)}>Integrations</div>
+              <div className={tw(`ml-4 text-xl`)}>Changing to adapt</div>
             </div>
             <p className={tw(`leading-loose text-gray-500`)}>
-              Nostrud excepteur incididunt proident sit nulla ipsum sunt nostrud est esse adipisicing irure officia
-              consectetur.
+              Our vision is to become the best oursourcing company around the world. So, we always want to change and re-new to find the best version of us.
             </p>
           </div>
         </div>

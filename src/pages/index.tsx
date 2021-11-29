@@ -1,9 +1,9 @@
 import { NextSeo } from 'next-seo';
 import Page from '@/components/page';
 import Header from '@/components/header';
-import VideoSection from '@/components/video-section';
 import ListSection from '@/components/list-section';
 import FeatureSection from '@/components/feature-section';
+import TechnologySection from '@/components/technolgies-section'
 import CasesSection from '@/components/cases-section';
 import SocialProof from '@/components/social-proof';
 import PricingTable from '@/components/pricing-table';
@@ -18,12 +18,11 @@ export default function Home() {
       />
       <Header />
       <main>
-        <VideoSection />
         <ListSection />
         <FeatureSection />
+        <TechnologySection />
         <CasesSection />
         <SocialProof />
-        <PricingTable />
       </main>
       <Footer />
     </Page>

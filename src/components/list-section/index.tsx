@@ -3,22 +3,16 @@ import FeatureSvg from '@/constants/svg/features.svg';
 
 const listItems = [
   {
-    title: `Designers`,
-    description: `Officia et fugiat mollit qui. Dolor elit aliqua voluptate ipsum
-    excepteur cillum consequat consectetur duis magna qui eu consequat occaecat.
-    Deserunt nisi sit.`,
+    title: `IT consultantacy`,
+    description: `With our experts who has over 10 years experienced in software develop and designing complex IT system. We ensure that we will provide the best IT solution for your company, and step by step make your company grow up in digital era.`,
   },
   {
-    title: `Developers`,
-    description: `Pariatur consectetur laboris exercitation duis laboris.
-    Commodo duis fugiat magna fugiat et ut anim elit. Tempor aute ex qui
-    tempor tempor.`,
+    title: `Supplying developers`,
+    description: `We have about 50 qualified enthusiastic, experienced developers.`,
   },
   {
-    title: `Product owners`,
-    description: `Ullamco consectetur ipsum eiusmod nisi adipisicing sint anim
-    dolore aute excepteur. Voluptate ea ullamco sunt eu elit qui aliquip.
-    Adipisicing.`,
+    title: `Software development`,
+    description: `We can provide developers in various of fields includes mobile application, web application, aritificial intelligence ...`,
   },
 ];
 
