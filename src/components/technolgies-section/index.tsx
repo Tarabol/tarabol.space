@@ -12,7 +12,7 @@ const TechnologySection = () => (
           <div className={tw(`w-full border-b md:w-1/2 md:border-r lg:w-1/3 p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <img
-                    src='/images/angular.jpeg'
+                    src='/images/vuejs.jpeg'
                     className={tw(`h-full w-full object-cover overflow-hidden rounded`)}
                     width={400}
                     height={300}
@@ -34,7 +34,7 @@ const TechnologySection = () => (
           <div className={tw(`w-full border-b md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <img
-                    src='/images/vuejs.png'
+                    src='/images/python.jpeg'
                     className={tw(`h-full w-full object-cover overflow-hidden rounded`)}
                     width={400}
                     height={300}
@@ -45,7 +45,7 @@ const TechnologySection = () => (
           <div className={tw(`w-full border-b md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0 p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <img
-                    src='/images/spring-boot.png'
+                    src='/images/android.jpeg'
                     className={tw(`h-full w-full object-cover overflow-hidden rounded`)}
                     width={400}
                     height={300}
@@ -56,7 +56,7 @@ const TechnologySection = () => (
           <div className={tw(`w-full border-b md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0 p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <img
-                    src='/images/flutter.png'
+                    src='/images/flutter.jpeg'
                     className={tw(`h-full w-full object-cover overflow-hidden rounded`)}
                     width={400}
                     height={300}
@@ -67,7 +67,7 @@ const TechnologySection = () => (
           <div className={tw(`w-full md:w-1/2 lg:w-1/3 p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <img
-                    src='/images/kotlin.png'
+                    src='/images/angular.jpeg'
                     className={tw(`h-full w-full object-cover overflow-hidden rounded`)}
                     width={400}
                     height={300}
