@@ -1,9 +1,9 @@
 import { tw, css } from 'twind/css';
 import Button from '@/components/button';
-import Netlify from '@/constants/svg/netlify.svg';
-import Nike from '@/constants/svg/nike.svg';
+import Atlassian from '@/constants/svg/atlassian.svg';
+import Github from '@/constants/svg/github.svg';
 import Figma from '@/constants/svg/figma.svg';
-import Aws from '@/constants/svg/aws.svg';
+import Microsft from '@/constants/svg/microsoft.svg';
 
 const headerStyle = css`
   background-color: #ffffff;
@@ -22,19 +22,17 @@ const Header = () => (
         </p>
       </div>
       <div className={tw(`mt-10 flex justify-center items-center w-full mx-auto`)}>
-        <Button primary>Get started</Button>
-        <span className={tw(`mx-2`)}>or</span>
         <Button>Contact us</Button>
       </div>
     </div>
     <div className={tw(`flex justify-center w-full`)}>
       <div className={tw(`mt-4 w-full`)}>
-        <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>Who has trusted us</p>
+        <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>Which platform are we using</p>
         <div className={tw(`flex items-center justify-center mx-auto flex-wrap`)}>
-          <Aws className={tw(`m-12 mb-8`)} width={120} />
-          <Netlify className={tw(`m-12`)} width={140} />
-          <Nike className={tw(`m-12`)} width={140} />
-          <Figma className={tw(`m-12`)} width={140} />
+          <Microsft className={tw(`m-16 mb-8`)} width={120} height={120} />
+          <Atlassian className={tw(`m-16`)} width={100} height={100} />
+          <Github className={tw(`m-16`)} width={100} height={100} />
+          <Figma className={tw(`m-16`)} width={120} height={120} />
         </div>
       </div>
     </div>

@@ -21,8 +21,8 @@ export default function Home() {
         <ListSection />
         <FeatureSection />
         <TechnologySection />
-        <CasesSection />
-        <SocialProof />
+        {/* <CasesSection /> */}
+        {/* <SocialProof /> */}
       </main>
       <Footer />
     </Page>

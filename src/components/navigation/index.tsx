@@ -13,18 +13,18 @@ type Link = {
 };
 
 const links = [
-  {
-    label: `Services`,
-    href: `/`,
-  },
-  {
-    label: `Testimonials`,
-    href: `/`,
-  },
-  {
-    label: `Pricing`,
-    href: `/`,
-  },
+  // {
+  //   label: `Services`,
+  //   href: `/`,
+  // },
+  // {
+  //   label: `Testimonials`,
+  //   href: `/`,
+  // },
+  // {
+  //   label: `Pricing`,
+  //   href: `/`,
+  // },
   {
     label: `Careers`,
     href: `https://docs.google.com/forms/d/e/1FAIpQLScMr4p_uf2jHuOhrEKQyZ0edFenK8AEIbilBvAZzm4B8AgYRw/viewform`,

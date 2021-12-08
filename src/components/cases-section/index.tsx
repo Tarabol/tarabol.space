@@ -68,7 +68,7 @@ const CasesSection = () => (
         <ParticleBg />
       </div>
       <div className={tw(`max-w-7xl mx-4 lg:mx-auto pt-20 lg:pt-40`)}>
-        <h1 className={tw(`text-white text-4xl lg:text-7xl font-bold text-center`)}>How big companies talk to us?</h1>
+        <h1 className={tw(`text-white text-4xl lg:text-7xl font-bold text-center`)}>How customers talk to us?</h1>
         <p className={tw(`text-white text-gray-400 text-center text-xl mt-12`)}>
           Don’t just take our word for it — see what leaders in digital are saying
         </p>

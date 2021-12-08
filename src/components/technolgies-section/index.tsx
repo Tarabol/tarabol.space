@@ -34,7 +34,7 @@ const TechnologySection = () => (
           <div className={tw(`w-full border-b md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <img
-                    src='/images/vue.jpeg'
+                    src='/images/vuejs.png'
                     className={tw(`h-full w-full object-cover overflow-hidden rounded`)}
                     width={400}
                     height={300}
