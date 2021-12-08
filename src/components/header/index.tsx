@@ -37,10 +37,10 @@ const Header = () => (
         </div> */}
         <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>Which platform are we using</p>
         <div className={tw(`flex items-center justify-center mx-auto flex-wrap`)}>
-          <Microsft className={tw(`m-16 mb-8`)} width={120} height={120} />
-          <Atlassian className={tw(`m-16`)} width={60} height={80} />
-          <Github className={tw(`m-16`)} width={75} height={80} />
-          <Figma className={tw(`m-16`)} width={50} height={70} />
+          <Microsft className={tw(`m-16 mb-8`)} width={100} height={100} />
+          <Atlassian className={tw(`m-16`)} width={100} height={100} />
+          <Github className={tw(`m-16`)} width={100} height={100} />
+          <Figma className={tw(`m-16`)} width={100} height={100} />
         </div>
       </div>
     </div>
