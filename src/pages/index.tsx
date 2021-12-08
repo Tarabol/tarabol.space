@@ -8,6 +8,7 @@ import CasesSection from '@/components/cases-section';
 import SocialProof from '@/components/social-proof';
 import PricingTable from '@/components/pricing-table';
 import Footer from '@/components/footer';
+import TarabolSection from '@/components/tarabol-section';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <TechnologySection />
         {/* <CasesSection /> */}
         {/* <SocialProof /> */}
+        <TarabolSection/>
       </main>
       <Footer />
     </Page>

@@ -22,11 +22,17 @@ const Header = () => (
         </p>
       </div>
       <div className={tw(`mt-10 flex justify-center items-center w-full mx-auto`)}>
-        <Button>Contact us</Button>
+        <Button primary>Contact us</Button>
       </div>
     </div>
     <div className={tw(`flex justify-center w-full`)}>
       <div className={tw(`mt-4 w-full`)}>
+        {/* <div className={tw(`mb-16 text-center`)}>
+          <h4 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase`)}>Platforms, Technologies</h4>
+          <p className={tw(`mt-2 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>
+          Which platform are we using
+          </p>
+        </div> */}
         <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>Which platform are we using</p>
         <div className={tw(`flex items-center justify-center mx-auto flex-wrap`)}>
           <Microsft className={tw(`m-16 mb-8`)} width={120} height={120} />
