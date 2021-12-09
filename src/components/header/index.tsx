@@ -22,8 +22,8 @@ const Header = () => (
         </p>
       </div>
       <div className={tw(`mt-10 flex justify-center items-center w-full mx-auto`)}>
-        <Button primary>Get started</Button>
-        <span className={tw(`mx-2`)}>or</span>
+        {/* <Button primary>Get started</Button>
+        <span className={tw(`mx-2`)}>or</span> */}
         <Button primary>Contact us</Button>
       </div>
     </div>
