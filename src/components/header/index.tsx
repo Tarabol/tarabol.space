@@ -4,6 +4,7 @@ import Atlassian from '@/constants/svg/atlassian.svg';
 import Github from '@/constants/svg/github.svg';
 import Figma from '@/constants/svg/figma.svg';
 import Microsft from '@/constants/svg/microsoft.svg';
+import Jira from '@/constants/svg/jira.svg';
 
 const headerStyle = css`
   background-color: #ffffff;
@@ -39,6 +40,7 @@ const Header = () => (
         <div className={tw(`flex items-center justify-center mx-auto flex-wrap`)}>
           <Microsft className={tw(`m-16 mb-8`)} width={100} height={100} />
           <Atlassian className={tw(`m-16`)} width={100} height={100} />
+          <Jira className={tw(`m-16`)} width={100} height={100} />
           <Github className={tw(`m-16`)} width={100} height={100} />
           <Figma className={tw(`m-16`)} width={100} height={100} />
         </div>

@@ -37,10 +37,9 @@ const navigation = {
     { name: 'Press', href: '#' },
     { name: 'Partners', href: '#' },
   ],
-  legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
+  contact: [
+    { name: 'Tarabol.space@gmail.com', href: '#' },
+    { name: 'Linkedin', href: 'https://www.linkedin.com/company/tarabol/?viewAsMember=true' }
   ],
   social: [
     {
@@ -137,7 +136,7 @@ const Footer = () => (
               <ul className={tw('mt-4 space-y-4')}>
                 {navigation.solutions.map((item) => (
                   <li key={item.name}>
-                    <a href={item.href} className={tw('text-base text-gray-500 hover:text-gray-600')}>
+                    <a href={item.href} className={tw('text-base text-gray-400 hover:text-gray-600')}>
                       {item.name}
                     </a>
                   </li>
@@ -149,7 +148,7 @@ const Footer = () => (
               <ul className={tw('mt-4 space-y-4')}>
                 {navigation.support.map((item) => (
                   <li key={item.name}>
-                    <a href={item.href} className={tw('text-base text-gray-500 hover:text-gray-600')}>
+                    <a href={item.href} className={tw('text-base text-gray-400 hover:text-gray-600')}>
                       {item.name}
                     </a>
                   </li>
@@ -163,7 +162,7 @@ const Footer = () => (
               <ul className={tw('mt-4 space-y-4')}>
                 {navigation.company.map((item) => (
                   <li key={item.name}>
-                    <a href={item.href} className={tw('text-base text-gray-500 hover:text-gray-600')}>
+                    <a href={item.href} className={tw('text-base text-gray-400 hover:text-gray-600')}>
                       {item.name}
                     </a>
                   </li>
@@ -171,11 +170,11 @@ const Footer = () => (
               </ul>
             </div>
             <div className={tw('mt-12 md:mt-0')}>
-                <h3 className={tw('text-sm font-semibold text-white  tracking-wider uppercase')}>Legal</h3>
+                <h3 className={tw('text-sm font-semibold text-white  tracking-wider uppercase')}>Contact</h3>
                 <ul className={tw('mt-4 space-y-4')}>
-                  {navigation.legal.map((item) => (
+                  {navigation.contact.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className={tw('text-base text-gray-500 hover:text-gray-600')}>
+                      <a href={item.href} className={tw('text-base text-gray-400 hover:text-gray-600')}>
                         {item.name}
                       </a>
                     </li>

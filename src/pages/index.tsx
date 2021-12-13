@@ -4,6 +4,7 @@ import Header from '@/components/header';
 import ListSection from '@/components/list-section';
 import FeatureSection from '@/components/feature-section';
 import TechnologySection from '@/components/technolgies-section'
+import HiringSection from '@/components/hiring-section'
 import CasesSection from '@/components/cases-section';
 import SocialProof from '@/components/social-proof';
 import PricingTable from '@/components/pricing-table';
@@ -24,6 +25,7 @@ export default function Home() {
         <TechnologySection />
         {/* <CasesSection /> */}
         {/* <SocialProof /> */}
+        {/* <HiringSection/> */}
         <TarabolSection/>
       </main>
       <Footer />
