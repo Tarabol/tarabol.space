@@ -25,7 +25,7 @@ export default function Home() {
         <TechnologySection />
         {/* <CasesSection /> */}
         {/* <SocialProof /> */}
-        {/* <HiringSection/> */}
+        <HiringSection/>
         <TarabolSection/>
       </main>
       <Footer />
