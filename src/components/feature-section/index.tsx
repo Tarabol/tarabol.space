@@ -1,3 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable prettier/prettier */
+/* eslint-disable max-len */
 import { tw } from 'twind';
 import Check from '@/constants/svg/check.svg';
 
