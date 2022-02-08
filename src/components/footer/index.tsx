@@ -20,27 +20,15 @@ const resourceLinks = [
 
 const navigation = {
   solutions: [
-    { name: `Marketing`, href: `#` },
-    { name: `Analytics`, href: `#` },
-    { name: `Commerce`, href: `#` },
-    { name: `Insights`, href: `#` },
+    { name: `Home`, href: `#` },
+    { name: `Featured Posts`, href: `#` },
+    { name: `About us`, href: `#` },
+    { name: `Contact us`, href: `#` },
   ],
   support: [
-    { name: `Pricing`, href: `#` },
-    { name: `Documentation`, href: `#` },
-    { name: `Guides`, href: `#` },
-    { name: `API Status`, href: `#` },
-  ],
-  company: [
-    { name: `About`, href: `#` },
-    // { name: 'Blog', href: '#' },
-    { name: `Jobs`, href: `#` },
-    { name: `Press`, href: `#` },
-    { name: `Partners`, href: `#` },
-  ],
-  contact: [
-    { name: `Tarabol.space@gmail.com`, href: `#` },
-    { name: `Linkedin`, href: `https://www.linkedin.com/company/tarabol/?viewAsMember=true` },
+    { name: `Customers`, href: `#` },
+    { name: `Fact`, href: `#` },
+    { name: `Services`, href: `#` },
   ],
   social: [
     {
@@ -108,7 +96,7 @@ const navigation = {
 };
 
 const Footer = () => (
-  <footer className={tw(`bg-black`)} aria-labelledby="footerHeading">
+  <footer className={tw(`bg-purple-800 py-6`)} aria-labelledby="footerHeading">
     <h2 id="footerHeading" className={tw(`sr-only`)}>
       Footer
     </h2>
@@ -130,11 +118,11 @@ const Footer = () => (
         <div className={tw(`mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2`)}>
           <div className={tw(`md:grid md:grid-cols-2 md:gap-8`)}>
             <div>
-              <h3 className={tw(`text-sm font-semibold text-white tracking-wider uppercase`)}>Solutions</h3>
+              <h3 className={tw(`text-md font-semibold text-white tracking-wider `)}>Solutions</h3>
               <ul className={tw(`mt-4 space-y-4`)}>
                 {navigation.solutions.map((item) => (
                   <li key={item.name}>
-                    <a href={item.href} className={tw(`text-base text-gray-400 hover:text-gray-600`)}>
+                    <a href={item.href} className={tw(`text-base text-gray-100 hover:text-gray-600`)}>
                       {item.name}
                     </a>
                   </li>
@@ -142,11 +130,11 @@ const Footer = () => (
               </ul>
             </div>
             <div className={tw(`mt-12 md:mt-0`)}>
-              <h3 className={tw(`text-sm font-semibold text-white tracking-wider uppercase`)}>Support</h3>
+              <h3 className={tw(`text-md font-semibold text-white tracking-wider `)}>Support</h3>
               <ul className={tw(`mt-4 space-y-4`)}>
                 {navigation.support.map((item) => (
                   <li key={item.name}>
-                    <a href={item.href} className={tw(`text-base text-gray-400 hover:text-gray-600`)}>
+                    <a href={item.href} className={tw(`text-base text-gray-100 hover:text-gray-600`)}>
                       {item.name}
                     </a>
                   </li>
@@ -154,8 +142,8 @@ const Footer = () => (
               </ul>
             </div>
           </div>
-          <div className={tw(`md:grid md:grid-cols-2 md:gap-8`)}>
-            <div>
+          <div className={tw(``)}>
+            {/* <div>
               <h3 className={tw(`text-sm font-semibold text-white tracking-wider uppercase`)}>Company</h3>
               <ul className={tw(`mt-4 space-y-4`)}>
                 {navigation.company.map((item) => (
@@ -166,8 +154,8 @@ const Footer = () => (
                   </li>
                 ))}
               </ul>
-            </div>
-            <div className={tw(`mt-12 md:mt-0`)}>
+            </div> */}
+            {/* <div className={tw(`mt-12 md:mt-0`)}>
               <h3 className={tw(`text-sm font-semibold text-white  tracking-wider uppercase`)}>Contact</h3>
               <ul className={tw(`mt-4 space-y-4`)}>
                 {navigation.contact.map((item) => (
@@ -178,13 +166,20 @@ const Footer = () => (
                   </li>
                 ))}
               </ul>
+            </div> */}
+            <div>
+              <h3 className={tw(`text-md font-semibold text-white tracking-wider `)}>Get in touch</h3>
+              <p className={tw(`text-md font-semibold text-white tracking-wider mt-4 `)}>Da Nang(Headquarter)</p>
+              <p className={tw(`text-md  text-white tracking-wider mt-4 `)}>
+                261 Nguyễn Văn Linh,District Hai Chau,Da Nang City
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div className={tw(`mt-12 border-t border-gray-200 pt-2`)}>
-        <p className={tw(`text-base text-white xl:text-center`)}>&copy; 2022 Tarabol, Inc. All rights reserved.</p>
-      </div>
+    </div>
+    <div className={tw(` border-t border-gray-200 pt-6`)}>
+      <p className={tw(`text-base text-white xl:text-center`)}>&copy; 2022 Tarabol, Inc. All rights reserved.</p>
     </div>
   </footer>
   // <footer className={tw(`bg-white border-t border-gray-200 pt-1 pb-16`)}>

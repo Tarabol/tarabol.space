@@ -1,9 +1,11 @@
+/* eslint-disable react/button-has-type */
+/* eslint-disable max-len */
 import { tw } from 'twind';
 import FeatureSvg from '@/constants/svg/features.svg';
 
-const listItems = [
+const listInput = [
   {
-    title: `IT consultantacy`,
+    placeholder: `IT consultantacy`,
     description: `With our experts who has over 10 years experienced in software develop and designing complex IT system. We ensure that we will provide the best IT solution for your company, and step by step make your company grow up in digital era.`,
   },
   {
@@ -17,35 +19,42 @@ const listItems = [
 ];
 
 const ListSection = () => (
-  <section className={tw(`lg:py-28 pt-28 overflow-hidden`)}>
+  <section className={tw(` overflow-hidden`)}>
     <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white`)}>
       <div className={tw(`mb-16 text-center`)}>
-        <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase`)}>Grow your revenue</h2>
-        <p className={tw(`mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>
-          Transform your business
-        </p>
+        <p className={tw(`mt-2 pb-4 text-4xl lg:text-6xl font-bold tracking-tight text-purple-700`)}>Contact us</p>
       </div>
       <div className={tw(`flex flex-wrap -mx-8 items-center`)}>
         <div className={tw(`w-full lg:w-1/2 px-8`)}>
-          <ul className={tw(`space-y-12`)}>
-            {listItems.map((item, index) => (
-              <li className={tw(`flex -mx-4`)} key={item.title}>
-                <div className={tw(`px-4`)}>
-                  <span
-                    className={tw(`flex w-16 h-16 mx-auto items-center
-                      justify-center text-2xl font-bold rounded-full
-                      bg-blue-50 text-blue-500`)}
-                  >
-                    {index + 1}
-                  </span>
-                </div>
-                <div className={tw(`px-4`)}>
-                  <h3 className={tw(`my-4 text-xl font-semibold`)}>{item.title}</h3>
-                  <p className={tw(`text-gray-500 leading-loose`)}>{item.description}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
+          <div>
+            <input
+              placeholder="Your name *"
+              autoComplete="off"
+              className={tw(`w-4/6 h-10 border-1 border-gray-500 bg-gray-100 mb-4 pl-2 rounded outline-none`)}
+            />
+          </div>
+          <div>
+            <input
+              placeholder="Your email *"
+              className={tw(`w-4/6 h-10 border-1 border-gray-500 bg-gray-100 mb-4 pl-2 rounded outline-none`)}
+            />
+          </div>
+          <div>
+            <input
+              placeholder="Phone *"
+              className={tw(`w-4/6 h-10 border-1 border-gray-500 bg-gray-100 mb-4 pl-2 rounded outline-none`)}
+            />
+          </div>
+          <div>
+            <textarea
+              placeholder="Key in your message *"
+              autoComplete="off"
+              className={tw(`w-4/6 h-24 border-1 border-gray-500 bg-gray-100 mb-4 pl-2 rounded outline-none`)}
+            />
+          </div>
+          <div className={tw(`w-4/6 flex justify-center`)}>
+            <button className={tw(`bg-purple-800 text-white py-2 px-10 rounded ml-`)}>Submit </button>
+          </div>
         </div>
         <div className={tw(`w-full lg:w-1/2 px-8`)}>
           <div className={tw(`lg:mb-12 lg:mb-0 pb-12 lg:pb-0 mt-16 lg:mt-0 mx-6 lg:mx-0`)}>
