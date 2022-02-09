@@ -12,6 +12,7 @@ import VideoSection from '@/components/video-section';
 import ServicesSection from '@/components/service-section';
 import Footer from '@/components/footer';
 import TarabolSection from '@/components/tarabol-section';
+import Leaderships from '@/components/leaderships-section';
 
 export default function Home() {
   return (
@@ -20,8 +21,9 @@ export default function Home() {
       <Header />
       <main>
         <ServicesSection />
+        <FeatureSection />
+        <Leaderships />
         <ListSection />
-        {/* <FeatureSection /> */}
         {/* <TechnologySection /> */}
         {/* <CasesSection /> */}
         {/* <SocialProof /> */}
