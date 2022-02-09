@@ -1,10 +1,8 @@
+/* eslint-disable max-len */
 import { tw, css } from 'twind/css';
-import Button from '@/components/button';
 import Atlassian from '@/constants/svg/atlassian.svg';
-import Github from '@/constants/svg/github.svg';
 import Figma from '@/constants/svg/figma.svg';
 import Microsft from '@/constants/svg/microsoft.svg';
-import Jira from '@/constants/svg/jira.svg';
 
 const headerStyle = css`
   background-color: #ffffff;
@@ -13,20 +11,25 @@ const headerStyle = css`
 
 const Header = () => (
   <header className={tw(headerStyle)}>
-    <div className={tw(`max-w-4xl mx-auto py-16 px-14 sm:px-6 lg:px-8`)}>
-      <h1 className={tw(`font-sans font-bold text-4xl md:text-5xl lg:text-8xl text-center leading-snug text-gray-800`)}>
+    <div className={tw(`max-w-4xl mx-auto py-16 px-12 sm:px-6 lg:px-8`)}>
+      <h1
+        className={tw(
+          `font-sans font-black uppercase text-2xl md:text-4xl lg:text-5xl text-center leading-snug text-purple-700`,
+        )}
+      >
         Your success, our hapiness
       </h1>
-      <div className={tw(`max-w-xl mx-auto`)}>
-        <p className={tw(`mt-10 text-gray-500 text-center text-xl lg:text-3xl`)}>
-          Providing the best IT services for your company
+      <div className={tw(`max-w-lg mx-auto`)}>
+        <p className={tw(`mt-6 font-bold text-gray-500 text-center text-xl lg:text-3xl px-9`)}>
+          We provide the best software development service
         </p>
+        <p className={tw(`font-bold text-gray-500 text-center text-xl lg:text-3xl px-9`)}>in Viet Nam</p>
       </div>
-      <div className={tw(`mt-10 flex justify-center items-center w-full mx-auto`)}>
-        {/* <Button primary>Get started</Button>
+      {/* <div className={tw(`mt-10 flex justify-center items-center w-full mx-auto`)}> */}
+      {/* <Button primary>Get started</Button>
         <span className={tw(`mx-2`)}>or</span> */}
-        <Button primary>Contact us</Button>
-      </div>
+      {/* <Button primary>Contact us</Button> */}
+      {/* </div> */}
     </div>
     <div className={tw(`flex justify-center w-full`)}>
       <div className={tw(`mt-4 w-full`)}>
@@ -36,13 +39,11 @@ const Header = () => (
           Which platform are we using
           </p>
         </div> */}
-        <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>Which platform are we using</p>
+        <p className={tw(`text-center font-medium text-xl text-gray-600`)}>We are using these platforms</p>
         <div className={tw(`flex items-center justify-center mx-auto flex-wrap`)}>
-          <Microsft className={tw(`m-16 mb-8`)} width={100} height={100} />
-          <Atlassian className={tw(`m-16`)} width={100} height={100} />
-          <Jira className={tw(`m-16`)} width={100} height={100} />
-          <Github className={tw(`m-16`)} width={100} height={100} />
-          <Figma className={tw(`m-16`)} width={100} height={100} />
+          <Microsft className={tw(`m-16`)} width={128} height={128} />
+          <Figma className={tw(`m-16`)} width={168} height={128} />
+          <Atlassian className={tw(`m-16`)} width={114} height={128} />
         </div>
       </div>
     </div>
