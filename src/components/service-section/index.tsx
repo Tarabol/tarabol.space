@@ -16,7 +16,7 @@ const ServiceSection = () => (
         We are Tarabol !
       </p>
       <p className={tw(`font-sans font-bold text-center mt-2 text-xl`)}>You can hire us on </p>
-      <div className={tw(`grid grid-cols-3 gap-6 mt-12`)}>
+      <div className={tw(`grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12`)}>
           {services.map((service : Service) =>(
               <div className={tw(`bg-white h-60 pt-6 pl-3 rounded-lg shadow-lg shadow-black font-bold text-xl `)}>{service}</div>
           )) }
