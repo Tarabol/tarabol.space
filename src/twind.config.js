@@ -7,9 +7,14 @@ export default {
             sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
       },
     },
+    // colors: {
+    //   mainColor: '#4337C9',
+    //   white: '#fff',
+    // },
   },
+  mode: 'jit',
   plugins: [
-    require("@tailwindcss/forms")({
+    require('@tailwindcss/forms')({
       strategy: 'class',
     })   
   ],

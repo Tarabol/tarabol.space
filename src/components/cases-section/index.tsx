@@ -7,38 +7,53 @@ const ParticleBg = () => (
     params={{
       particles: {
         number: {
-          value: 400,
+          value: 500,
           density: {
-            enable: true,
-            value_area: 3000,
+            enable: false,
+          },
+        },
+        size: {
+          value: 2,
+          random: true,
+          anim: {
+            speed: 0.5,
+            size_min: 0.5,
           },
         },
         line_linked: {
           enable: false,
         },
         move: {
-          direction: `right`,
-          speed: 0.3,
-        },
-        size: {
-          value: 1,
-        },
-        opacity: {
-          anim: {
-            enable: true,
-            speed: 0.5,
-            opacity_min: 0.1,
-          },
+          random: true,
+          speed: 0.5,
+          direction: `bottom`,
+          out_mode: `out`,
         },
       },
       interactivity: {
         events: {
+          onhover: {
+            enable: true,
+            mode: `bubbles`,
+          },
           onclick: {
-            enable: false,
+            enable: true,
+            mode: `repulse`,
+          },
+        },
+        modes: {
+          bubble: {
+            distance: 250,
+            duration: 3,
+            size: 0,
+            opacity: 0,
+          },
+          repulse: {
+            distance: 400,
+            duration: 4,
           },
         },
       },
-      retina_detect: true,
     }}
   />
 );
@@ -86,7 +101,7 @@ const CasesSection = () => (
                   <img
                     src={article.image}
                     alt={article.alt}
-                    className={tw(`h-full w-full object-cover overflow-hidden rounded`)}
+                    className={tw(`h-full w-full object-cover overflow-hidden rounded object-fill`)}
                     width={400}
                     height={300}
                   />
