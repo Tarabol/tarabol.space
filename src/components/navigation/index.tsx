@@ -3,7 +3,7 @@
 /* eslint-disable prettier/prettier */
 import { tw } from 'twind';
 import { useState } from 'react';
-import Button from '@/components/button';
+// import Button from '@/components/button';
 import Down from '@/constants/svg/down.svg';
 
 interface IMenuButton {
@@ -14,9 +14,10 @@ interface IMenuButton {
 type Link = {
   label: string;
   href: string;
+  icon?: any;
 };
 
-const links = [
+const links: any[] = [
   {
     label: `Home`,
     href: `/`,
@@ -40,20 +41,20 @@ const links = [
   },
 ];
 
-const secondaryLinks = [
-  {
-    label: `Contact us`,
-    href: `/`,
-  },
-  {
-    label: `Log in`,
-    href: `/`,
-  },
-  {
-    label: `Get Started`,
-    href: `/`,
-  },
-];
+// const secondaryLinks = [
+//   {
+//     label: `Contact us`,
+//     href: `/`,
+//   },
+//   {
+//     label: `Log in`,
+//     href: `/`,
+//   },
+//   {
+//     label: `Get Started`,
+//     href: `/`,
+//   },
+// ];
 
 const MenuButton = ({ toggleMenu, showMenu }: IMenuButton) => (
   <button
@@ -139,8 +140,8 @@ const Navigation = () => {
                     className={tw(`text-gray-500 hover:text-gray-600 px-3 py-2 rounded-md font-medium flex items-center first:text-purple-700 last:bg-indigo-800 last:text-white last:hover:text-white last:hover:bg-opacity-90 `)}
                   >
                     {link.label}
-                    {link.label === 'Services' &&
-                     <span className={tw(`ml-1`)}><Down width={16} height={10} fill= "CurrentColor" className={tw(`text-center text-gray-500`)}/>
+                    {link?.icon &&
+                     <span className={tw(`ml-1`)}><link.icon width={16} height={10} fill= "CurrentColor" className={tw(`text-center text-gray-500`)}/>
                      </span> }
                   </a>
                 ))}

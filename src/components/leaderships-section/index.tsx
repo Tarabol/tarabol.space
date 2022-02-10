@@ -3,9 +3,15 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable max-len */
 import { tw } from 'twind';
-import Check from '@/constants/svg/check.svg';
+// import Check from '@/constants/svg/check.svg';
 import Carousel from 'react-elastic-carousel';
 
+type Person = {
+  id: number;
+  name: string;
+  note: string;
+  detail : string;
+}
 const persons = [
   { id: 1, name: `DANG TRUNG ANH`,
   note:`Co - Founder`,
@@ -47,7 +53,7 @@ const Leadership = () => (
         <div className={tw(`text-center`)}>
           <h4 className={tw(` text-indigo-600 font-extrabold tracking-wide text-4xl mb-12 mt-8 `)}>Meet our leaderships</h4>
           <Carousel isRTL={false} breakPoints={breakPoints}>
-            {persons.map((person) => (
+            {persons.map((person: Person) => (
               <div key={person.id} className={tw(`pb-28 rounded-lg shadow-xl shadow-black mb-16 bg-white`)} style={{width : `486px`}}>
               <img src="/images/founder_trunganh.png" alt="scenery" width={486} height={486} className={tw(`w`)} />
               <div className={tw(`px-2`)}>

@@ -3,10 +3,17 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable max-len */
 import { tw } from 'twind';
-import Check from '@/constants/svg/check.svg';
+// import Check from '@/constants/svg/check.svg';
 import Carousel from 'react-elastic-carousel';
 
-const items = [
+type Feature = {
+  id: number;
+  title: string;
+  note: string;
+  detail: string;
+}
+
+const items: any[] = [
   { id: 1, title: `Design pattern in UI/UX`,
   note:`By Tarabol`,
   detail:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -113,7 +120,7 @@ const FeatureSection = () => (
         <div className={tw(` text-center`)}>
           <h4 className={tw(` text-indigo-600 font-extrabold tracking-wide text-4xl mb-8`)}>Features Posts</h4>
           <Carousel isRTL={false} breakPoints={breakPoints}>
-            {items.map((item) => (
+            {items.map((item: Feature) => (
               <div key={item.id} className={tw(`pb-28 rounded-lg shadow-xl shadow-black mb-16 text-left`)} style={{width : `345px`}}>
               <img src="/images/scenery.png" alt="scenery" width={345} height={215} className={tw(`w`)} />
               <div className={tw(`px-2`)}>

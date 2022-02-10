@@ -12,6 +12,7 @@ export default {
     //   white: '#fff',
     // },
   },
+  mode: 'jit',
   plugins: [
     require('@tailwindcss/forms')({
       strategy: 'class',

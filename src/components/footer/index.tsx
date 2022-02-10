@@ -1,24 +1,43 @@
 /* eslint-disable max-len */
 import { tw } from 'twind';
-import Button from '@/components/button';
-import Tarabol from '@/constants/svg/tarabol.svg';
+// import Button from '@/components/button';
+// import Tarabol from '@/constants/svg/tarabol.svg';
 import { SVGProps } from 'react';
 
-const productLinks = [`Features`, `Customers`, `Platform`, `Pricing`, `Enterprise`, `What's new?`];
-const aboutLinks = [`About Us`, `Careers`, `Leadership`];
-const resourceLinks = [
-  `Get started`,
-  `Guides`,
-  `Tools`,
-  `Case studies`,
-  `Solutions`,
-  `FAQs`,
-  `Help Center`,
-  `Training`,
-  `Other resources`,
-];
+// const productLinks = [`Features`, `Customers`, `Platform`, `Pricing`, `Enterprise`, `What's new?`];
+// const aboutLinks = [`About Us`, `Careers`, `Leadership`];
+// const resourceLinks = [
+//   `Get started`,
+//   `Guides`,
+//   `Tools`,
+//   `Case studies`,
+//   `Solutions`,
+//   `FAQs`,
+//   `Help Center`,
+//   `Training`,
+//   `Other resources`,
+// ];
 
-const navigation = {
+type Navigation = {
+  social: any[];
+  solutions: any[];
+  support: any[];
+};
+type Solution = {
+  name: string;
+  href: string;
+};
+type Support = {
+  name: string;
+  href: string;
+};
+type Social = {
+  name: string;
+  href: string;
+  icon: any;
+};
+
+const navigation: Navigation = {
   solutions: [
     { name: `Home`, href: `#` },
     { name: `Featured Posts`, href: `#` },
@@ -107,7 +126,7 @@ const Footer = () => (
           <p className={tw(`text-white decoration-solid font-bold`)}>Tarabol Co ., Ltd</p>
           {/* <p className={'text-gray-500 text-base'}>We provide the best IT services for your company</p> */}
           <div className={tw(`flex space-x-6`)}>
-            {navigation.social.map((item) => (
+            {navigation.social.map((item: Social) => (
               <a key={item.name} href={item.href} className={tw(`text-white hover:text-white`)}>
                 <span className={tw(`sr-only`)}>{item.name}</span>
                 <item.icon className={tw(`h-6 w-6`)} aria-hidden="true" />
@@ -120,9 +139,9 @@ const Footer = () => (
             <div>
               <h3 className={tw(`text-md font-semibold text-white tracking-wider `)}>Solutions</h3>
               <ul className={tw(`mt-4 space-y-4`)}>
-                {navigation.solutions.map((item) => (
+                {navigation.solutions.map((item: Solution) => (
                   <li key={item.name}>
-                    <a href={item.href} className={tw(`text-base text-gray-100 hover:text-gray-600`)}>
+                    <a href={item.href} className={tw(`text-base text-gray-100 hover:opacity-80`)}>
                       {item.name}
                     </a>
                   </li>
@@ -132,9 +151,9 @@ const Footer = () => (
             <div className={tw(`mt-12 md:mt-0`)}>
               <h3 className={tw(`text-md font-semibold text-white tracking-wider `)}>Support</h3>
               <ul className={tw(`mt-4 space-y-4`)}>
-                {navigation.support.map((item) => (
+                {navigation.support.map((item: Support) => (
                   <li key={item.name}>
-                    <a href={item.href} className={tw(`text-base text-gray-100 hover:text-gray-600`)}>
+                    <a href={item.href} className={tw(`text-base text-gray-100 hover:opacity-80`)}>
                       {item.name}
                     </a>
                   </li>

@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { tw } from 'twind';
-import Check from '@/constants/svg/check.svg';
+// import Check from '@/constants/svg/check.svg';
 
 const TechnologySection = () => (
   <section className={tw(`bg-white pb-6`)}>
